@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Flutter sport timer\\sport_timer\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\6ec2c823b2ddfa9d4aff16fd99b56b89\\transformed\\jetified-exoplayer-core-2.18.1\\res\\values-pa\\values-pa.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,126,191,268,334,409,475,574,670",
+                        "endColumns": "70,64,76,65,74,65,98,95,84",
+                        "endOffsets": "121,186,263,329,404,470,569,665,750"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "315,386,451,528,594,669,735,834,930",
+                        "endColumns": "70,64,76,65,74,65,98,95,84",
+                        "endOffsets": "381,446,523,589,664,730,829,925,1010"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\5e083c06c9925c2309f02468fc66e376\\transformed\\core-1.7.0\\res\\values-pa\\values-pa.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1454",
+                        "endColumns": "100",
+                        "endOffsets": "1550"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\6b0daa5fb4c2eb7e8b55778df9b972f6\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-pa\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "146",
+                        "endOffsets": "341"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "150",
+                        "endOffsets": "201"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\aa7263188b29434019ae8934cbefd4da\\transformed\\jetified-media2-session-1.2.0\\res\\values-pa\\values-pa.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,164,260,354,476",
+                        "endColumns": "108,95,93,121,126",
+                        "endOffsets": "159,255,349,471,598"
+                    },
+                    "to": {
+                        "startLines": "3,13,14,15,16",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "206,1015,1111,1205,1327",
+                        "endColumns": "108,95,93,121,126",
+                        "endOffsets": "310,1106,1200,1322,1449"
+                    }
+                }
+            ]
+        }
+    ]
+}

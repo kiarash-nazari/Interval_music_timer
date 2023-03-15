@@ -1,0 +1,253 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.sport_timer"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <queries>
+15-->D:\Flutter sport timer\sport_timer\android\app\src\debug\AndroidManifest.xml:7:5-13:15
+16
+17        <!-- If your app opens https URLs -->
+18        <intent>
+18-->D:\Flutter sport timer\sport_timer\android\app\src\debug\AndroidManifest.xml:9:10-12:19
+19            <action android:name="android.intent.action.VIEW" />
+19-->D:\Flutter sport timer\sport_timer\android\app\src\debug\AndroidManifest.xml:10:11-63
+19-->D:\Flutter sport timer\sport_timer\android\app\src\debug\AndroidManifest.xml:10:19-60
+20
+21            <data android:scheme="https" />
+21-->D:\Flutter sport timer\sport_timer\android\app\src\debug\AndroidManifest.xml:11:12-43
+21-->D:\Flutter sport timer\sport_timer\android\app\src\debug\AndroidManifest.xml:11:18-40
+22        </intent>
+23        <intent>
+23-->[androidx.media2:media2-session:1.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:25:9-27:18
+24            <action android:name="android.media.browse.MediaBrowserService" />
+24-->[androidx.media2:media2-session:1.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:26:13-79
+24-->[androidx.media2:media2-session:1.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:26:21-76
+25        </intent>
+26        <intent>
+26-->[androidx.media2:media2-session:1.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:28:9-30:18
+27            <action android:name="androidx.media2.session.MediaSessionService" />
+27-->[androidx.media2:media2-session:1.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:29:13-82
+27-->[androidx.media2:media2-session:1.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:29:21-79
+28        </intent>
+29        <intent>
+29-->[androidx.media2:media2-session:1.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:31:9-33:18
+30            <action android:name="androidx.media2.session.MediaLibraryService" />
+30-->[androidx.media2:media2-session:1.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:32:13-82
+30-->[androidx.media2:media2-session:1.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:32:21-79
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.INTERNET" />
+34-->D:\Flutter sport timer\sport_timer\android\app\src\debug\AndroidManifest.xml:15:5-66
+34-->D:\Flutter sport timer\sport_timer\android\app\src\debug\AndroidManifest.xml:15:22-64
+35    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+35-->[:firebase_analytics] D:\Flutter sport timer\sport_timer\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+35-->[:firebase_analytics] D:\Flutter sport timer\sport_timer\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
+36    <uses-permission android:name="android.permission.WAKE_LOCK" />
+36-->[:firebase_analytics] D:\Flutter sport timer\sport_timer\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-68
+36-->[:firebase_analytics] D:\Flutter sport timer\sport_timer\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-65
+37    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+37-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\443c168aad1312d521964e71061e38da\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:25:5-79
+37-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\443c168aad1312d521964e71061e38da\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:25:22-76
+38    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+38-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
+38-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
+39
+40    <application
+41        android:name="android.app.Application"
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.7.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\5e083c06c9925c2309f02468fc66e376\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+43        android:debuggable="true"
+44        android:icon="@mipmap/ic_launcher"
+45        android:label="Interval Music_Timer" >
+46        <activity
+47            android:name="com.example.sport_timer.MainActivity"
+48            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+49            android:exported="true"
+50            android:hardwareAccelerated="true"
+51            android:launchMode="singleTop"
+52            android:theme="@style/LaunchTheme"
+53            android:windowSoftInputMode="adjustResize" >
+54
+55            <!--
+56                 Specifies an Android theme to apply to this Activity as soon as
+57                 the Android process has started. This theme is visible to the user
+58                 while the Flutter UI initializes. After that, this theme continues
+59                 to determine the Window background behind the Flutter UI.
+60            -->
+61            <meta-data
+62                android:name="io.flutter.embedding.android.NormalTheme"
+63                android:resource="@style/NormalTheme" />
+64
+65            <intent-filter>
+66                <action android:name="android.intent.action.MAIN" />
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+69            </intent-filter>
+70        </activity>
+71        <!--
+72             Don't delete the meta-data below.
+73             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+74        -->
+75        <meta-data
+76            android:name="flutterEmbedding"
+77            android:value="2" />
+78
+79        <service
+79-->[:firebase_crashlytics] D:\Flutter sport timer\sport_timer\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+80            android:name="com.google.firebase.components.ComponentDiscoveryService"
+80-->[:firebase_crashlytics] D:\Flutter sport timer\sport_timer\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+81            android:directBootAware="true"
+81-->[com.google.firebase:firebase-common:20.3.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:34:13-43
+82            android:exported="false" >
+82-->[com.google.firebase:firebase-crashlytics:18.3.3] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\d4e047402856fbef4336885a837bf9d6\transformed\jetified-firebase-crashlytics-18.3.3\AndroidManifest.xml:16:13-37
+83            <meta-data
+83-->[:firebase_crashlytics] D:\Flutter sport timer\sport_timer\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+84                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
+84-->[:firebase_crashlytics] D:\Flutter sport timer\sport_timer\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-130
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[:firebase_crashlytics] D:\Flutter sport timer\sport_timer\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+86            <meta-data
+86-->[:firebase_analytics] D:\Flutter sport timer\sport_timer\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:85
+87                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+87-->[:firebase_analytics] D:\Flutter sport timer\sport_timer\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-128
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[:firebase_analytics] D:\Flutter sport timer\sport_timer\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-82
+89            <meta-data
+89-->[:firebase_core] D:\Flutter sport timer\sport_timer\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+90-->[:firebase_core] D:\Flutter sport timer\sport_timer\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[:firebase_core] D:\Flutter sport timer\sport_timer\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-crashlytics:18.3.3] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\d4e047402856fbef4336885a837bf9d6\transformed\jetified-firebase-crashlytics-18.3.3\AndroidManifest.xml:17:13-19:85
+93                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+93-->[com.google.firebase:firebase-crashlytics:18.3.3] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\d4e047402856fbef4336885a837bf9d6\transformed\jetified-firebase-crashlytics-18.3.3\AndroidManifest.xml:18:17-115
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-crashlytics:18.3.3] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\d4e047402856fbef4336885a837bf9d6\transformed\jetified-firebase-crashlytics-18.3.3\AndroidManifest.xml:19:17-82
+95            <meta-data
+95-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\443c168aad1312d521964e71061e38da\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
+96                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+96-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\443c168aad1312d521964e71061e38da\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\443c168aad1312d521964e71061e38da\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\cf2530c0f139726a53229b3fb2b93ae8\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
+99                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+99-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\cf2530c0f139726a53229b3fb2b93ae8\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\cf2530c0f139726a53229b3fb2b93ae8\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
+101        </service>
+102
+103        <activity
+103-->[:url_launcher_android] D:\Flutter sport timer\sport_timer\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+104            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+104-->[:url_launcher_android] D:\Flutter sport timer\sport_timer\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+105            android:exported="false"
+105-->[:url_launcher_android] D:\Flutter sport timer\sport_timer\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+106            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+106-->[:url_launcher_android] D:\Flutter sport timer\sport_timer\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+107
+108        <uses-library
+108-->[androidx.window:window:1.0.0-beta04] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+109            android:name="androidx.window.extensions"
+109-->[androidx.window:window:1.0.0-beta04] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+110            android:required="false" />
+110-->[androidx.window:window:1.0.0-beta04] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+111        <uses-library
+111-->[androidx.window:window:1.0.0-beta04] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+112            android:name="androidx.window.sidecar"
+112-->[androidx.window:window:1.0.0-beta04] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+113            android:required="false" />
+113-->[androidx.window:window:1.0.0-beta04] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+114
+115        <provider
+115-->[com.google.firebase:firebase-common:20.3.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:25:9-30:39
+116            android:name="com.google.firebase.provider.FirebaseInitProvider"
+116-->[com.google.firebase:firebase-common:20.3.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:26:13-77
+117            android:authorities="com.example.sport_timer.firebaseinitprovider"
+117-->[com.google.firebase:firebase-common:20.3.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:27:13-72
+118            android:directBootAware="true"
+118-->[com.google.firebase:firebase-common:20.3.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:28:13-43
+119            android:exported="false"
+119-->[com.google.firebase:firebase-common:20.3.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:29:13-37
+120            android:initOrder="100" />
+120-->[com.google.firebase:firebase-common:20.3.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:30:13-36
+121
+122        <receiver
+122-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
+123            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+123-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
+124            android:enabled="true"
+124-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
+125            android:exported="false" >
+125-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
+126        </receiver>
+127
+128        <service
+128-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
+129            android:name="com.google.android.gms.measurement.AppMeasurementService"
+129-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+130            android:enabled="true"
+130-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
+131            android:exported="false" />
+131-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
+132        <service
+132-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
+133            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+133-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+134            android:enabled="true"
+134-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
+135            android:exported="false"
+135-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
+136            android:permission="android.permission.BIND_JOB_SERVICE" />
+136-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\33d7ccc9d88199a24d34be6116e40565\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
+137
+138        <meta-data
+138-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\6b0daa5fb4c2eb7e8b55778df9b972f6\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+139            android:name="com.google.android.gms.version"
+139-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\6b0daa5fb4c2eb7e8b55778df9b972f6\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+140            android:value="@integer/google_play_services_version" />
+140-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\6b0daa5fb4c2eb7e8b55778df9b972f6\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+141
+142        <service
+142-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+143            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+143-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+144            android:exported="false" >
+144-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+145            <meta-data
+145-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+146                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+146-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+147                android:value="cct" />
+147-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+148        </service>
+149        <service
+149-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+150            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+150-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+151            android:exported="false"
+151-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+152            android:permission="android.permission.BIND_JOB_SERVICE" >
+152-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+153        </service>
+154
+155        <receiver
+155-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+156            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+156-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+157            android:exported="false" />
+157-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS-K555LF154H\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+158    </application>
+159
+160</manifest>

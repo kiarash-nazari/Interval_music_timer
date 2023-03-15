@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Flutter sport timer\\sport_timer\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\6b0daa5fb4c2eb7e8b55778df9b972f6\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-b+sr+Latn\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "202",
+                        "endColumns": "125",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "129",
+                        "endOffsets": "180"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\5e083c06c9925c2309f02468fc66e376\\transformed\\core-1.7.0\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1419",
+                        "endColumns": "100",
+                        "endOffsets": "1515"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\aa7263188b29434019ae8934cbefd4da\\transformed\\jetified-media2-session-1.2.0\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,162,262,357,484",
+                        "endColumns": "106,99,94,126,132",
+                        "endOffsets": "157,257,352,479,612"
+                    },
+                    "to": {
+                        "startLines": "3,13,14,15,16",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "185,964,1064,1159,1286",
+                        "endColumns": "106,99,94,126,132",
+                        "endOffsets": "287,1059,1154,1281,1414"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\6ec2c823b2ddfa9d4aff16fd99b56b89\\transformed\\jetified-exoplayer-core-2.18.1\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,130,191,256,328,407,480,568,652",
+                        "endColumns": "74,60,64,71,78,72,87,83,74",
+                        "endOffsets": "125,186,251,323,402,475,563,647,722"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "292,367,428,493,565,644,717,805,889",
+                        "endColumns": "74,60,64,71,78,72,87,83,74",
+                        "endOffsets": "362,423,488,560,639,712,800,884,959"
+                    }
+                }
+            ]
+        }
+    ]
+}

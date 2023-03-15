@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "794074224655",
+    "project_id": "interval-music-timer",
+    "storage_bucket": "interval-music-timer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794074224655:android:57e7b7145c731a180cab7a",
+        "android_client_info": {
+          "package_name": "com.example.sport_timer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794074224655-9e6i9a1rhg2969ej8ed4r3ebsv2gmimg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-OjQhdsWsThdYwGKl0pUPeCuTp-lrwx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794074224655-9e6i9a1rhg2969ej8ed4r3ebsv2gmimg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "794074224655-2t5epf3hv6ki4uo6blv6o9gkjpcko33e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sportTimer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

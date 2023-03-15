@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Flutter sport timer\\sport_timer\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-or\\values-or.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\5e083c06c9925c2309f02468fc66e376\\transformed\\core-1.7.0\\res\\values-or\\values-or.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "8",
+                        "startColumns": "4",
+                        "startOffsets": "761",
+                        "endColumns": "100",
+                        "endOffsets": "857"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\aa7263188b29434019ae8934cbefd4da\\transformed\\jetified-media2-session-1.2.0\\res\\values-or\\values-or.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,158,261,358,486",
+                        "endColumns": "102,102,96,127,134",
+                        "endOffsets": "153,256,353,481,616"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "195,298,401,498,626",
+                        "endColumns": "102,102,96,127,134",
+                        "endOffsets": "293,396,493,621,756"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\6b0daa5fb4c2eb7e8b55778df9b972f6\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-or\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "135",
+                        "endOffsets": "330"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "139",
+                        "endOffsets": "190"
+                    }
+                }
+            ]
+        }
+    ]
+}
