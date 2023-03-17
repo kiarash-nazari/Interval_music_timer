@@ -66,6 +66,7 @@ class ActiveTimerController extends GetxController {
       playerMix.play();
     } else {
       checkAndDownloadMusic();
+      musicsList[idChecker.value - 1].exists.value = true;
     }
   }
 
