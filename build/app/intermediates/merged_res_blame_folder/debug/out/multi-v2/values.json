@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Flutter sport timer\\sport_timer\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\Interval_music_timer\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "D:\\Flutter sport timer\\sport_timer\\build\\firebase_crashlytics\\intermediates\\packaged_res\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "60",
-                        "endOffsets": "111"
-                    },
-                    "to": {
-                        "startLines": "11",
-                        "startColumns": "4",
-                        "startOffsets": "501",
-                        "endColumns": "60",
-                        "endOffsets": "557"
-                    }
-                },
                 {
                     "source": "C:\\Users\\ASUS-K555LF154H\\.gradle\\caches\\transforms-3\\8a5514d4341f323606d890e29d4268b9\\transformed\\lifecycle-runtime-2.3.1\\res\\values\\values.xml",
                     "from": {
@@ -72,22 +55,20 @@
                     }
                 },
                 {
-                    "source": "D:\\Flutter sport timer\\sport_timer\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\Interval_music_timer\\build\\firebase_crashlytics\\intermediates\\packaged_res\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "176,832",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "483,998"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
                     },
                     "to": {
-                        "startLines": "116,121",
-                        "startColumns": "4,4",
-                        "startOffsets": "7248,7556",
-                        "endLines": "120,123",
-                        "endColumns": "12,12",
-                        "endOffsets": "7551,7720"
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "501",
+                        "endColumns": "60",
+                        "endOffsets": "557"
                     }
                 },
                 {
@@ -160,6 +141,25 @@
                         "endLines": "7,8,9,10,76,149,153,305,322,330",
                         "endColumns": "11,59,51,44,59,24,24,24,24,24",
                         "endOffsets": "339,399,451,496,4731,9417,9614,18736,19850,20243"
+                    }
+                },
+                {
+                    "source": "D:\\Interval_music_timer\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "176,832",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "483,998"
+                    },
+                    "to": {
+                        "startLines": "116,121",
+                        "startColumns": "4,4",
+                        "startOffsets": "7248,7556",
+                        "endLines": "120,123",
+                        "endColumns": "12,12",
+                        "endOffsets": "7551,7720"
                     }
                 }
             ]

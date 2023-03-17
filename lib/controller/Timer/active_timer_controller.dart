@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:get/get.dart';
 import 'package:just_audio/just_audio.dart';
+import 'package:sport_timer/service/dio.dart';
 
 import '../../models/music/ModelOfMusic.dart';
 
@@ -9,33 +11,67 @@ class ActiveTimerController extends GetxController {
   List<ModelOfMusic> musicsList = [
     ModelOfMusic(
         audio:
-            "https://media.githubusercontent.com/media/ehsanNazari145/Interval_music_timer_V2/master/assets/audio/ViralMix.mp3?token=AXRLJC3LQX7PZUSJX4YPBVDD56BMU",
+            "https://media.githubusercontent.com/media/kiarash-nazari/Interval_music_timer_V2/master/assets/audio/ViralMix.mp3?token=AXRLJC3LQX7PZUSJX4YPBVDD56BMU",
         id: "1",
-        image: "assets/images/covers/cover1.jpg"),
+        image: "assets/images/covers/cover1.jpg",
+        percent: 0.0.obs,
+        path: "/data/user/0/com.example.sport_timer/app_flutter/mix1.mp3",
+        exists: false.obs),
     ModelOfMusic(
         audio:
-            "https://media.githubusercontent.com/media/ehsanNazari145/Interval_music_timer_V2/master/assets/audio/mainMusics/mix1.mp3?token=AXRLJCYMVFMJG6O433OUDPTD56CRG",
+            "https://media.githubusercontent.com/media/kiarash-nazari/Interval_music_timer_V2/master/assets/audio/mainMusics/mix1.mp3?token=AXRLJCYMVFMJG6O433OUDPTD56CRG",
         id: "2",
-        image: "assets/images/covers/cover2.jpg"),
+        image: "assets/images/covers/cover2.jpg",
+        percent: 0.0.obs,
+        path: "/data/user/0/com.example.sport_timer/app_flutter/mix2.mp3",
+        exists: false.obs),
     ModelOfMusic(
         audio:
-            "https://media.githubusercontent.com/media/ehsanNazari145/Interval_music_timer_V2/master/assets/audio/mainMusics/mix2.mp3?token=AXRLJC3I4TLLR2UOFHZKKFTD56CYK",
+            "https://media.githubusercontent.com/media/kiarash-nazari/Interval_music_timer_V2/master/assets/audio/mainMusics/mix2.mp3?token=AXRLJC3I4TLLR2UOFHZKKFTD56CYK",
         id: "3",
-        image: "assets/images/covers/cover3.jpg"),
+        image: "assets/images/covers/cover3.jpg",
+        percent: 0.0.obs,
+        path: "/data/user/0/com.example.sport_timer/app_flutter/mix3.mp3",
+        exists: false.obs),
     ModelOfMusic(
         audio:
-            "https://media.githubusercontent.com/media/ehsanNazari145/Interval_music_timer_V2/master/assets/audio/mainMusics/mix3.mp3?token=AXRLJC7N6AHEKZZPBOM7CBLD56C4C",
+            "https://media.githubusercontent.com/media/kiarash-nazari/Interval_music_timer_V2/master/assets/audio/mainMusics/mix3.mp3?token=AXRLJC7N6AHEKZZPBOM7CBLD56C4C",
         id: "4",
-        image: "assets/images/covers/cover4.jpg"),
+        image: "assets/images/covers/cover4.jpg",
+        percent: 0.0.obs,
+        path: "/data/user/0/com.example.sport_timer/app_flutter/mix4.mp3",
+        exists: false.obs),
     ModelOfMusic(
         audio:
-            "https://media.githubusercontent.com/media/ehsanNazari145/Interval_music_timer_V2/master/assets/audio/mainMusics/mix4.mp3?token=AXRLJC5HPGX5T2IHQDCFBUTD56C6S",
+            "https://media.githubusercontent.com/media/kiarash-nazari/Interval_music_timer_V2/master/assets/audio/mainMusics/mix4.mp3?token=AXRLJC5HPGX5T2IHQDCFBUTD56C6S",
         id: "5",
-        image: "assets/images/covers/cover5.jpg"),
+        image: "assets/images/covers/cover5.jpg",
+        percent: 0.0.obs,
+        path: "/data/user/0/com.example.sport_timer/app_flutter/mix5.mp3",
+        exists: false.obs),
   ];
+  var idChecker = 1.obs;
+  checkAndDownloadMusic() async {
+    await FileDownloader().downloadFile(
+        musicsList[idChecker.value - 1].audio!, "mix$idChecker.mp3");
+  }
 
+  getMixMusic() async {
+    String myPath =
+        "/data/user/0/com.example.sport_timer/app_flutter/mix$idChecker.mp3";
+    File file = File(myPath);
+    if (file.existsSync()) {
+      await playerMix.setFilePath(myPath);
+      await playerMix.load();
+      playerMix.play();
+    } else {
+      checkAndDownloadMusic();
+    }
+  }
+
+  var downloadProgress = 0.0.obs;
   var mainMusic =
-      "https://media.githubusercontent.com/media/ehsanNazari145/Interval_music_timer_V2/master/assets/audio/ViralMix.mp3?token=AXRLJC3LQX7PZUSJX4YPBVDD56BMU"
+      "https://media.githubusercontent.com/media/kiarash-nazari/Interval_music_timer_V2/master/assets/audio/ViralMix.mp3?token=AXRLJC3LQX7PZUSJX4YPBVDD56BMU"
           .obs;
   var backgroundPhoto = "assets/images/covers/cover1.jpg".obs;
   final player1 = AudioPlayer();
@@ -69,6 +105,19 @@ class ActiveTimerController extends GetxController {
   /////////////////////////.
   ///
   ///.
+  ///
+
+  @override
+  onInit() {
+    super.onInit();
+    musicsList.forEach((element) {
+      if (File(element.path!).existsSync()) {
+        element.exists.value = true;
+        element.percent.value = 1.0;
+      }
+    });
+  }
+
   startReatTimer() {
     endMusicFunc();
 
@@ -157,12 +206,6 @@ class ActiveTimerController extends GetxController {
   getAudioStart() async {
     await playerStart.setAsset("assets/audio/Start.wav");
     playerStart.play();
-  }
-
-  getMixMusic() async {
-    await playerMix.setUrl(mainMusic.value);
-    await playerMix.load();
-    playerMix.play();
   }
 
   getAudioMidel() async {
