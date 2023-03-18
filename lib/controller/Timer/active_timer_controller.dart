@@ -52,7 +52,7 @@ class ActiveTimerController extends GetxController {
   ];
   var idChecker = 1.obs;
   checkAndDownloadMusic() async {
-    await FileDownloader().downloadFile(
+    await FileDownloader(idChecker.value).downloadFile(
         musicsList[idChecker.value - 1].audio!, "mix$idChecker.mp3");
   }
 

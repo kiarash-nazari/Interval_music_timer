@@ -6,7 +6,8 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:sport_timer/controller/Timer/active_timer_controller.dart';
 
 class FileDownloader {
-  var downloadProgress = 0.0;
+  FileDownloader(this.downloadProgress);
+  var downloadProgress = 1;
   ActiveTimerController activeTimerController =
       Get.put(ActiveTimerController());
   Future<String> downloadFile(String url, String fileName) async {
@@ -31,14 +32,12 @@ class FileDownloader {
         url,
         filePath,
         onReceiveProgress: (count, total) {
-          print("INJAHAST COUNT:${count / total}");
-          activeTimerController
-              .musicsList[activeTimerController.idChecker.value - 1]
-              .percent
-              .value = (count / total);
-          print(activeTimerController
-              .musicsList[activeTimerController.idChecker.value - 1].id);
-          print(filePath);
+          // print("INJAHAST COUNT:${count / total}");
+          activeTimerController.musicsList[downloadProgress - 1].percent.value =
+              (count / total);
+          // print(activeTimerController
+          //     .musicsList[activeTimerController.idChecker.value - 1].id);
+          // print(filePath);
           // print("INJAHAST Total:$total");
         },
       );
