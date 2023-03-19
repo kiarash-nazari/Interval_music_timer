@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:get/get.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:sport_timer/service/dio.dart';
+import 'package:sport_timer/service/diogetfilesize.dart';
 
 import '../../models/music/ModelOfMusic.dart';
 
@@ -111,10 +112,20 @@ class ActiveTimerController extends GetxController {
   @override
   onInit() {
     super.onInit();
-    musicsList.forEach((element) {
+    musicsList.forEach((element) async {
       if (File(element.path!).existsSync()) {
         element.exists.value = true;
-        element.percent.value = 1.0;
+        var _ff = await File(element.path!).length();
+        var size = await SizeFinder().getFileSize(element.audio!);
+        if (size == _ff) {
+          element.percent.value = 1.0;
+        } else {
+          File(element.path!).deleteSync();
+          FileDownloader(int.parse(element.id!))
+              .downloadFile(element.audio!, "mix${int.parse(element.id!)}.mp3");
+        }
+        print("heeeelel yooooose${_ff}");
+        print("heeeelel yooooose${size}");
       }
     });
   }

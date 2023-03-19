@@ -26,9 +26,17 @@ class FileDownloader {
     // Set the download path for the file
     var filePath = '${directory.path}/$fileName';
 
+
+    CancelToken cancelToken = CancelToken();
+
     // Download the file and save it to the specified path
+
+    // if (File(activeTimerController.musicsList[downloadProgress-1].path!).existsSync()) {
+      
+    // }
     try {
       await dio.download(
+        cancelToken: cancelToken,
         url,
         filePath,
         onReceiveProgress: (count, total) {
@@ -47,4 +55,7 @@ class FileDownloader {
 
     return filePath;
   }
+  
+
+
 }
