@@ -40,13 +40,8 @@ class FileDownloader {
         url,
         filePath,
         onReceiveProgress: (count, total) {
-          // print("INJAHAST COUNT:${count / total}");
           activeTimerController.musicsList[downloadProgress - 1].percent.value =
               (count / total);
-          // print(activeTimerController
-          //     .musicsList[activeTimerController.idChecker.value - 1].id);
-          // print(filePath);
-          // print("INJAHAST Total:$total");
         },
       );
     } catch (e) {

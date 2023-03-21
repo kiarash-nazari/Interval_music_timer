@@ -58,6 +58,7 @@ INJECTED from D:\Interval_music_timer\android\app\src\main\AndroidManifest.xml:1
 INJECTED from D:\Interval_music_timer\android\app\src\main\AndroidManifest.xml:1:1-37:12
 MERGED from D:\Interval_music_timer\android\app\src\main\AndroidManifest.xml:1:1-37:12
 MERGED from [:just_audio] D:\Interval_music_timer\build\just_audio\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:shared_preferences_android] D:\Interval_music_timer\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:firebase_crashlytics] D:\Interval_music_timer\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_analytics] D:\Interval_music_timer\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-21:12
 MERGED from [:firebase_core] D:\Interval_music_timer\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
@@ -151,6 +152,8 @@ INJECTED from D:\Interval_music_timer\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\Interval_music_timer\android\app\src\main\AndroidManifest.xml
 MERGED from [:just_audio] D:\Interval_music_timer\build\just_audio\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:just_audio] D:\Interval_music_timer\build\just_audio\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] D:\Interval_music_timer\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] D:\Interval_music_timer\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_crashlytics] D:\Interval_music_timer\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_crashlytics] D:\Interval_music_timer\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_analytics] D:\Interval_music_timer\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41

@@ -3,8 +3,10 @@ import 'dart:io';
 
 import 'package:get/get.dart';
 import 'package:just_audio/just_audio.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sport_timer/service/dio.dart';
 import 'package:sport_timer/service/diogetfilesize.dart';
+import 'package:sport_timer/service/savedata.dart';
 
 import '../../models/music/ModelOfMusic.dart';
 
@@ -66,6 +68,9 @@ class ActiveTimerController extends GetxController {
       await playerMix.load();
       playerMix.play();
     } else {
+      int size = await SizeFinder()
+          .getFileSize(musicsList[idChecker.value - 1].audio!);
+      SaveData().saveData(size, musicsList[idChecker.value - 1].id!);
       checkAndDownloadMusic();
       musicsList[idChecker.value - 1].exists.value = true;
     }
@@ -114,10 +119,12 @@ class ActiveTimerController extends GetxController {
     super.onInit();
     musicsList.forEach((element) async {
       if (File(element.path!).existsSync()) {
+        final sp = await SharedPreferences.getInstance();
+        var sizek = sp.get(element.id!);
         element.exists.value = true;
         var _ff = await File(element.path!).length();
-        var size = await SizeFinder().getFileSize(element.audio!);
-        if (size == _ff) {
+
+        if (sizek == _ff) {
           element.percent.value = 1.0;
         } else {
           File(element.path!).deleteSync();
@@ -125,7 +132,6 @@ class ActiveTimerController extends GetxController {
               .downloadFile(element.audio!, "mix${int.parse(element.id!)}.mp3");
         }
         print("heeeelel yooooose${_ff}");
-        print("heeeelel yooooose${size}");
       }
     });
   }

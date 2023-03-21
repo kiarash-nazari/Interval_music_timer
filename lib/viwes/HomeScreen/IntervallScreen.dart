@@ -85,8 +85,6 @@ class IntervallScreen extends StatelessWidget {
               return GestureDetector(
                 onTap: () {
                   activeTimerController.idChecker.value = int.parse(i.id!);
-                  // activeTimerController.checkAndDownloadMusic();
-
                   activeTimerController.backgroundPhoto.value = i.image!;
                   if (activeTimerController.mainMusic.value == i.audio) {
                     if (activeTimerController.mixPlayerVolume.value) {
