@@ -10,7 +10,6 @@ import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:sport_timer/controller/Timer/active_timer_controller.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:sport_timer/service/dio.dart';
 
 import '../../components/Decorations.dart';
 import '../../controller/NavigationBar/NavigationBarController.dart';
@@ -57,7 +56,7 @@ class IntervallScreen extends StatelessWidget {
                   height: 10,
                 ),
                 //Row of play and pause buttom
-                playAndPauseContainer(),
+                playAndPauseContainer(context),
 
                 //Slider
                 slider(),
@@ -166,7 +165,7 @@ class IntervallScreen extends StatelessWidget {
     );
   }
 
-  Container playAndPauseContainer() {
+  Container playAndPauseContainer(BuildContext context) {
     return Container(
       width: Get.width - 10,
       decoration: BoxDecoration(
@@ -223,63 +222,82 @@ class IntervallScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(50),
                           splashColor: const Color(0xFF00CCFF),
                           onTap: () {
-                            activeTimerController.handlePlayButton2.value =
-                                true;
-                            if (activeTimerController.handlePlayButton.value) {
-                              activeTimerController.getAudioStart();
-                              Future.delayed(const Duration(milliseconds: 3000),
-                                  () {
-                                try {
-                                  ///load inputs
-                                  activeTimerController.activMillisecond.value =
-                                      double.parse(activeInputController.text);
-                                  activeTimerController.restMillisecond.value =
-                                      double.parse(restInputController.text);
-                                  activeTimerController.loop.value =
-                                      int.parse(loopInputController.text);
-
-                                  ///call timers and music
-                                  activeTimerController.startActivitiTimer();
-                                  if (activeTimerController.playerMix.playing) {
-                                  } else {
-                                    activeTimerController.getMixMusic();
-                                    activeTimerController
-                                        .mixPlayerVolume.value = true;
-                                  }
-
-                                  if (activeTimerController
-                                      .playEndMusic.value) {
-                                    activeTimerController.endMusicFunc();
-
-                                    activeTimerController.playEndMusic.value =
-                                        false;
-                                    activeTimerController
-                                        .handlePlayButton.value = false;
-                                  }
-                                } on Exception catch (e) {
-                                  // print("fill the form $e");
+                            if (activeInputController.text.isEmpty ||
+                                restInputController.text.isEmpty ||
+                                loopInputController.text.isEmpty) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text('Fill all the inputs'),
+                                ),
+                              );
+                            } else {
+                              //condition to make change on playe button
+                              if (activeTimerController
+                                  .handlePlayButton2.value) {
+                                activeTimerController.handlePlayButton2.value =
+                                    false;
+                                if (activeTimerController
+                                    .handlePlayButton.value) {
+                                } else {
+                                  activeTimerController.playerMix.play();
                                 }
-                              });
-                            }
+                              }
 
-                            ///empty Loop Screen
-                            activeTimerController.loopOnScreen.value = 0;
+                              if (activeTimerController
+                                  .handlePlayButton.value) {
+                                activeTimerController.getAudioStart();
+
+                                ///empty Loop Screen
+                                activeTimerController.loopOnScreen.value = 0;
+                                Future.delayed(
+                                    const Duration(milliseconds: 3000), () {
+                                  try {
+                                    ///load inputs
+                                    activeTimerController
+                                            .activMillisecond.value =
+                                        double.parse(
+                                            activeInputController.text);
+                                    activeTimerController
+                                            .restMillisecond.value =
+                                        double.parse(restInputController.text);
+                                    activeTimerController.loop.value =
+                                        int.parse(loopInputController.text);
+
+                                    ///call timers and music
+                                    activeTimerController.startActivitiTimer();
+                                    if (activeTimerController
+                                        .playerMix.playing) {
+                                    } else {
+                                      activeTimerController.getMixMusic();
+                                      activeTimerController
+                                          .mixPlayerVolume.value = true;
+                                    }
+
+                                    if (activeTimerController
+                                        .playEndMusic.value) {
+                                      activeTimerController.endMusicFunc();
+
+                                      activeTimerController.playEndMusic.value =
+                                          false;
+                                      activeTimerController
+                                          .handlePlayButton.value = false;
+                                    }
+                                  } on Exception catch (e) {
+                                    // print("fill the form $e");
+                                  }
+                                });
+                              }
+                            }
                           },
-                          child: activeTimerController
-                                      .handlePlayButton2.value ==
-                                  false
+                          child: activeTimerController.handlePlayButton2.value
                               ? const Icon(
                                   Icons.play_arrow_rounded,
                                   size: 90,
                                 )
                               : InkWell(
                                   onTap: () {
-                                    if (activeTimerController
-                                        .handlePlayButton2.value) {
-                                      activeTimerController
-                                          .handlePlayButton2.value = false;
+                                    {
                                       activeTimerController.playerMix.pause();
-                                    } else {
                                       activeTimerController
                                           .handlePlayButton2.value = true;
                                     }
