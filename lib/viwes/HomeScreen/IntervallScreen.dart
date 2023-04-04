@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -218,51 +219,76 @@ class IntervallScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       InkWell(
-                        onTap: () {
-                          if (activeTimerController.handlePlayButton.value) {
-                            activeTimerController.getAudioStart();
-                            Future.delayed(const Duration(milliseconds: 3000),
-                                () {
-                              try {
-                                ///load inputs
-                                activeTimerController.activMillisecond.value =
-                                    double.parse(activeInputController.text);
-                                activeTimerController.restMillisecond.value =
-                                    double.parse(restInputController.text);
-                                activeTimerController.loop.value =
-                                    int.parse(loopInputController.text);
+                          highlightColor: const Color(0xFF00CCFF),
+                          borderRadius: BorderRadius.circular(50),
+                          splashColor: const Color(0xFF00CCFF),
+                          onTap: () {
+                            activeTimerController.handlePlayButton2.value =
+                                true;
+                            if (activeTimerController.handlePlayButton.value) {
+                              activeTimerController.getAudioStart();
+                              Future.delayed(const Duration(milliseconds: 3000),
+                                  () {
+                                try {
+                                  ///load inputs
+                                  activeTimerController.activMillisecond.value =
+                                      double.parse(activeInputController.text);
+                                  activeTimerController.restMillisecond.value =
+                                      double.parse(restInputController.text);
+                                  activeTimerController.loop.value =
+                                      int.parse(loopInputController.text);
 
-                                ///call timers and music
-                                activeTimerController.startActivitiTimer();
-                                if (activeTimerController.playerMix.playing) {
-                                } else {
-                                  activeTimerController.getMixMusic();
-                                  activeTimerController.mixPlayerVolume.value =
-                                      true;
+                                  ///call timers and music
+                                  activeTimerController.startActivitiTimer();
+                                  if (activeTimerController.playerMix.playing) {
+                                  } else {
+                                    activeTimerController.getMixMusic();
+                                    activeTimerController
+                                        .mixPlayerVolume.value = true;
+                                  }
+
+                                  if (activeTimerController
+                                      .playEndMusic.value) {
+                                    activeTimerController.endMusicFunc();
+
+                                    activeTimerController.playEndMusic.value =
+                                        false;
+                                    activeTimerController
+                                        .handlePlayButton.value = false;
+                                  }
+                                } on Exception catch (e) {
+                                  // print("fill the form $e");
                                 }
+                              });
+                            }
 
-                                if (activeTimerController.playEndMusic.value) {
-                                  activeTimerController.endMusicFunc();
-
-                                  activeTimerController.playEndMusic.value =
-                                      false;
-                                  activeTimerController.handlePlayButton.value =
-                                      false;
-                                }
-                              } on Exception catch (e) {
-                                // print("fill the form $e");
-                              }
-                            });
-                          }
-
-                          ///empty Loop Screen
-                          activeTimerController.loopOnScreen.value = 0;
-                        },
-                        child: const Icon(
-                          Icons.play_arrow_rounded,
-                          size: 90,
-                        ),
-                      ),
+                            ///empty Loop Screen
+                            activeTimerController.loopOnScreen.value = 0;
+                          },
+                          child: activeTimerController
+                                      .handlePlayButton2.value ==
+                                  false
+                              ? const Icon(
+                                  Icons.play_arrow_rounded,
+                                  size: 90,
+                                )
+                              : InkWell(
+                                  onTap: () {
+                                    if (activeTimerController
+                                        .handlePlayButton2.value) {
+                                      activeTimerController
+                                          .handlePlayButton2.value = false;
+                                      activeTimerController.playerMix.pause();
+                                    } else {
+                                      activeTimerController
+                                          .handlePlayButton2.value = true;
+                                    }
+                                  },
+                                  child: const Icon(
+                                    Icons.pause,
+                                    size: 85,
+                                  ),
+                                )),
 
                       InkWell(
                         onTap: () {

@@ -91,6 +91,7 @@ class ActiveTimerController extends GetxController {
 
   // this bool is for avoid of 2 times execution timer
   var handlePlayButton = true.obs;
+  var handlePlayButton2 = true.obs;
   // this bool is for mute or unmute music icon
   var mixPlayerVolume = false.obs;
 
@@ -224,6 +225,7 @@ class ActiveTimerController extends GetxController {
   getAudioStart() async {
     await playerStart.setAsset("assets/audio/Start.wav");
     playerStart.play();
+    handlePlayButton.value = false;
   }
 
   getAudioMidel() async {
